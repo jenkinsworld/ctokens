@@ -1,0 +1,3 @@
+create a tag in remote
+pull 
+changes made in local work space
