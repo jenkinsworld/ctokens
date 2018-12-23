@@ -2,3 +2,4 @@ create a tag in remote
 pull 
 changes made in local work space
 modified script copying steps to else loop
+commit from script is not listed in github commits (git push is manual), trying to PUSH manually now
