@@ -8,6 +8,7 @@ if [[ ! "${commitmsg}" =~ ^JIRA[0-9] ]]; then
 else
   echo "Pattern matched"
   git commit -am "$commitmsg"
+  echo "commited the changes successfully"
   release=`git describe --tags --abbrev=0 | awk -F. '{$NF+=1; OFS="."; print $0}'`
   git tag -a $release 
   git push origin $release
