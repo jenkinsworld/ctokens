@@ -11,6 +11,6 @@ else
   echo "commited the changes successfully"
   release=`git describe --tags --abbrev=0 | awk -F. '{$NF+=1; OFS="."; print $0}'`
   git tag -a $release 
-  git push origin $release
+  #git push origin $release
 fi
 
